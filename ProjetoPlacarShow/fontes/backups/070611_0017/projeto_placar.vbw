@@ -1,0 +1,5 @@
+frmPrincipal = 326, 81, 1155, 680, , 6, 7, 1170, 666, C
+frmControle = 451, 103, 1143, 824, , 22, 29, 731, 505, C
+FrmCadastroEquipes = 226, 164, 673, 763, , 0, 0, 0, 0, C
+frmConfiguracoesPlacar = 723, 160, 1170, 759, , 0, 0, 0, 0, C
+frmUsuario = 0, 0, 0, 0, C, 0, 0, 0, 0, C

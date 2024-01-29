@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core" >
+    <h:head>
+        <title>Cadastro de Funcionários</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="3">
+                <h:outputLabel value="Nome:"/>
+                <h:inputText id="nome" value="#{funcionarioMB.funcionario.nome}" size="20" required="true" requiredMessage="Campo Obrigatório"/>
+                <h:message for="nome"/>
+                
+                <h:outputLabel value="Endereco:"/>
+                <h:inputText id="end" value="#{funcionarioMB.funcionario.endereco}" size="20" required="true" requiredMessage="Campo Obrigatório"/>
+                <h:message for="end"/>
+
+                <h:outputLabel value="Número:"/>
+                <h:inputText id="nro" value="#{funcionarioMB.funcionario.numero}" size="20"/>
+                <h:message for="nro"/>
+                
+                <h:outputLabel value="Cidade:"/>
+                <h:inputText id="mun" value="#{funcionarioMB.funcionario.cidade}" size="20" required="true" requiredMessage="Campo Obrigatório"/>
+                <h:message for="mun"/>
+                
+                 <h:outputLabel value="Telefone:"/>
+                 <h:inputText id="tel" value="#{funcionarioMB.funcionario.telefone}" size="20"/>
+                 <h:message for="tel"/>
+                
+                <h:commandButton id="btnE" value="Enviar" type="submit" action="#{funcionarioMB.salvarFuncionario()}"/>
+                <h:commandButton id="btnL" value="Limpar" type="reset"/>
+            </h:panelGrid>
+        </h:form>
+        <h:panelGrid>
+        <h:dataTable id="tableFuncionario" value="#{funcionarioMB.listaFuncionario}" var="f" title="Lista de Funcionários" border="1" rows="10">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="NOME"/>
+                </f:facet>
+                <h:outputText value="#{f.nome}"/>
+            </h:column>
+            
+             <h:column>
+                <f:facet name="header">
+                    <h:outputText value="ENDEREÇO"/>
+                </f:facet>
+                 <h:outputText value="#{f.endereco}"/>
+            </h:column>
+            
+             <h:column>
+                <f:facet name="header">
+                    <h:outputText value="NÚMERO"/>
+                </f:facet>
+                 <h:outputText value="#{f.numero}"/>
+            </h:column>
+            
+             <h:column>
+                <f:facet name="header">
+                    <h:outputText value="CIDADE"/>
+                </f:facet>
+                 <h:outputText value="#{f.cidade}"/>
+            </h:column>
+            
+            
+             <h:column>
+                <f:facet name="header">
+                    <h:outputText value="TELEFONE"/>
+                </f:facet>
+                 <h:outputText value="#{f.telefone}"/>
+            </h:column>
+        </h:dataTable>
+        </h:panelGrid>>
+    </h:body>
+</html>
+

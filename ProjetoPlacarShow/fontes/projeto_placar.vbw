@@ -1,0 +1,6 @@
+frmPrincipal = 313, 122, 1142, 721, C, 6, 7, 1170, 666, C
+frmControle = 510, 214, 1202, 935, C, 22, 29, 731, 505, C
+FrmCadastroEquipes = 596, 66, 1043, 665, C, 0, 0, 0, 0, C
+frmConfiguracoesPlacar = 444, -4, 1255, 529, , 0, 0, 0, 0, C
+frmUsuario = 560, 42, 1007, 641, C, 0, 0, 0, 0, C
+frmTelaEspera = 245, 117, 692, 716, C, 0, 0, 0, 0, C
